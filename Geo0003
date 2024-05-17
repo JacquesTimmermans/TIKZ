@@ -1,0 +1,84 @@
+\newpage
+\section{GEOMETRY~0003}
+
+%
+% LATEX | TikZ Code
+%
+% Geometria | 0003
+%
+% by Jacques Timmermans
+%
+% Quinta-Feira 17 Maio 2024
+%
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+\huge
+
+%
+% Definições
+%
+
+\def\l{2} % espessura linha
+\def\a{6} % lado triângulo
+\def\b{9} % lado triângulo
+\def\H{5}
+\def\h{0.4} % desvio legenda
+
+\def\xA{\b}
+\def\yA{0}
+
+\def\xB{0}
+\def\yB{0}
+
+\def\xC{3.5}
+\def\yC{\H}
+
+\def\xD{3.5}
+\def\yD{0}
+
+\def\xE{3.5}
+\def\yE{\H}
+
+%
+% Construções
+% 
+
+\draw[black, fill = pink, line width=\l pt] (\xA,\yA) -- (\xB,\yB) --(\xC,\yC) -- cycle; 
+
+\draw[black, line width=\l pt] (\xD,\yD) -- (\xE,\yE) -- cycle; 
+
+%
+% Legenda Pontos
+%
+
+\node at (\xA+\h,\yA-\h) {$\mathbf{A}$};
+\node at (\xB-\h,\yB-\h) {$\mathbf{B}$};
+\node at (\xC+0,\yC+\h) {$\mathbf{C}$};
+\node at (\xD,\yD-\h) {$\mathbf{D}$};
+
+%
+% Legenda Lados
+%
+
+\node at (0.5*\xC+0.5*\xB-\h,0.5*\yC+0.5*\yB) {$\mathbf{a}$};
+\node at (0.5*\xC+0.5*\xA+\h,0.5*\yC+0.5*\yA+0.5*\h) {$\mathbf{b}$};
+\node at (0.5*\xB+0.5*\xD,-\h) {$\mathbf{m}$};
+\node at (0.5*\xD+0.5*\xA,-\h) {$\mathbf{n}$};
+\node at (0.5*\xD+0.5*\xE-\h,0.5*\yD+0.5*\yE) {$\mathbf{h}$};
+
+%
+% Equações
+%
+
+\node at (6,5.5) {$\mathbf{Show}$};
+\node at (7.3,5.5) {$\mathbf{that}$};
+
+\node at (7.6,4.5) {$\mathbf{h=\sqrt{a^2-\left(\frac{a^2+ c^2-b^2}{2c}\right)^2}}$};
+
+\node at (5.0,-2) {$\mathbf{G/0003}$};
+\node at (6.3,-2) {$\mathbf{by}$};
+\node at (7,-2) {$\mathbf{j}$};
+
+\end{tikzpicture}
+\end{center}
