@@ -1,0 +1,102 @@
+\newpage
+\section{GEOMETRY~0004}
+
+%
+% LATEX | TikZ Code
+%
+% Geometria | 0004
+%
+% by Jacques Timmermans
+%
+% Quarta-Feira 17 Maio 2024
+%
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5]
+\huge
+
+%
+% Definições
+%
+
+\def\l{2} % espessura linha
+\def\a{6} % lado triângulo
+\def\b{9} % lado 
+triângulo
+\def\h{0.4} % desvio legenda
+\def\r{.5} % raio
+
+\def\xA{0}
+\def\yA{0}
+
+\def\xB{0}
+\def\yB{\a}
+
+\def\xC{\b}
+\def\yC{0}
+
+\def\xD{3}
+\def\yD{0}
+
+\def\xE{0.5*\b}
+\def\yE{0.5*\a}
+
+\def\xF{0.5*\b}
+\def\yF{0}
+
+%
+% Construções
+% 
+
+\draw[black, fill = pink, line width=\l pt] (\xA,\yA) -- (\xB,\yB) --(\xC,\yC) -- cycle; 
+
+%\draw[orange, line width=\l pt] (0.5*\xC,0) -- (0.5*\xC,0.5*\yB) -- cycle; 
+
+\draw[black, line width=\l pt] (\xB,\yB) -- (\xD,\yD) -- cycle; 
+
+\draw[black, line width=\l pt] (0.5*\xC,0.5*\yB) -- (\xD,\yD) -- cycle; 
+
+%
+% Legenda Pontos
+%
+
+\node at (\xA-\h,\yA-\h) {$\mathbf{C}$};
+\node at (\xB-\h,\yB+\h) {$\mathbf{B}$};
+\node at (\xC+\h,\yC-\h) {$\mathbf{A}$};
+\node at (\xD,\yD-\h) {$\mathbf{D}$};
+%\node at (\xE,\yE+\h) {$\mathbf{E}$};
+\node at (0.5*\xC+2*\h,\yC-\h) {$\mathbf{b}$};
+\node at (0.5*\xA+0.5*\xB-\h,0.5*\yA+0.5*\yB) {$\mathbf{a}$};
+%\node at (\xF,\yF-\h) {$\mathbf{F}$};
+\node at (0.5*\xB+0.5*0.5*\xC-3*\h,0.5*\yB) {$\mathbf{x}$};
+\node at (0.5*\xD+0.5*0.5*\xC+\h,0.5*0.5*\yB) {$\mathbf{y}$};
+\node at (\xE+2*\h,\yE) {$\mathbf{c}$};
+\node at (\xD-1.7*\h,\yD+0.8*\h) {$\mathbf{\theta}$};
+\node at (\xD+1.7*\h,\yD+0.8*\h) {$\mathbf{\theta}$};
+
+%
+% Equações
+%
+
+\node at (5,7.5) {$\mathbf{Show}$};
+\node at (6.4,7.5) {$\mathbf{that}$};
+
+\node at (5,6.5) {$\mathbf{\frac{x}{y}=2}$};
+
+\node at (6.1,5.5) {$\mathbf{x=\frac{1}{3}\sqrt{9a^2+b^2}}$};
+
+\node at (6.3,4.5) {$\mathbf{\theta=arc sin{\frac{3a}{\sqrt{9a^2+b^2}}}}$};
+
+\node at (5.0,-2) {$\mathbf{G/0004}$};
+\node at (6.3,-2) {$\mathbf{by}$};
+\node at (7,-2) {$\mathbf{j}$};
+
+%
+% Legendas Angulos
+%
+
+\draw[black, line width=0.5pt] (\xD+\r,\yD) arc(0:63.435:\r);
+\draw[black, line width=0.5pt] (\xD-\r,\yD) arc(180:114:\r);
+
+\end{tikzpicture}
+\end{center}
